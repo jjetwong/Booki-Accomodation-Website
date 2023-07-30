@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e923124ecf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href='./resources/styles.css'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="headerLogo">
+            <img id="logoImage" src="./resources/Images/Booki.png" alt="Booki Logo">
+        </div>
+        <nav>
+            <a class="headerLink" id="accomodationsLink" href=""> Accomodations </a>
+            <a class="headerLink" id="activitiesLink" href=""> Activities </a>
+        </nav>
+    </header>
+
+    <div id="search">
+        <h2>Find a place for you dream vacation</h2>
+        <p>Downtown or in nature</p>
+        <form id="searchForm" action="">
+            <i id="locationDot" class="fa-solid fa-location-dot"></i>
+            <label id="searchBox" for=""> <input type="text" placeholder="Enter a location"> </label>
+            <input id="searchButton" type="submit" value="Search">
+        </form>
+    </div>
+
+    <div id="filters">
+        <h3> Filters </h3>
+        
+        <div id="filterTypeLowCost" class="filterType">
+            <i id="moneyLogo" class="fa-solid fa-money-bill-wave"></i> <button type="button"> Low Cost </button>
+        </div>
+        <div id="filterTypeFamily" class="filterType">
+            <i id="familyLogo" class="fa-solid fa-people-group"></i> <button type="button"> Family-friendly </button>
+        </div>
+
+        <div id="filterTypeRomantic" class="filterType">
+            <i id="romanticLogo" class="fa-solid fa-heart"></i> <button type="button"> Romantic </button>
+        </div>
+
+        <div id="filterTypePet" class="filterType">
+            <i id="petLogo" class="fa-solid fa-dog"></i> <button> Pets allowed </button type="button">
+        </div>
+
+
+    </div>
+</body>
+</html>
