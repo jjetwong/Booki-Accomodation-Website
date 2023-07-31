@@ -3,6 +3,7 @@ body {
 }
 
 /* ---------------------------------Header-------------------------------- */
+
 header {
     display: flex;
     flex-direction: row;
@@ -40,8 +41,8 @@ nav {
     color: #0065FC;
 }
 
-
 /* ---------------------------------Search-------------------------------- */
+
 #search {
     height: 150px;
     width: auto;
@@ -58,7 +59,6 @@ nav {
     display: flex;
     align-items: center;
     height: 80px;
-
 }
 #locationDot {
     height: 50px;
@@ -97,6 +97,7 @@ nav {
 }
 
 /* ---------------------------------Filters-------------------------------- */
+
 #filters {
     display: flex;
     flex-direction: row;
@@ -174,7 +175,9 @@ nav {
     text-align: center;
     line-height: 50px;
 }
+
 /* ---------------------------------Results-------------------------------- */
+
 #results{
     display: flex;
     align-items: baseline;
@@ -196,11 +199,13 @@ nav {
     width: 27%;
     font-weight: 500;
 }
+
 /* ---------------------------------Main-------------------------------- */
+
 main {
     display: flex;
 }
-article {
+#accomodations {
     display: flex;
     flex-wrap: wrap;
     height: 670px;
@@ -209,7 +214,7 @@ article {
     background-color: #F2F2F2;
     border-radius: 18px;
 }
-article h2 {
+#accomodations h2 {
     width: 100%;
     margin-left: 35px;
     margin-top: 40px;
@@ -221,7 +226,7 @@ article h2 {
     margin-left: 3.5%;
     margin-bottom: 30px;
     border-radius: 15px;
-    box-shadow: 1;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
 }
 .locationCardMain img{
     object-fit: cover;
@@ -246,13 +251,13 @@ article h2 {
 #noStar {
     color: #F2F2F2;
 }
-article a {
+#accomodations a {
     margin-left: 35px;
     margin-bottom: 35px;
     color: black;
     text-decoration: none;
 }
-
+/* ---------------------------------Most Popular-------------------------------- */
 aside{
     height: 670px;
     width: 27%;
@@ -264,9 +269,10 @@ aside h2{
     width: 100%;
     margin-left: 35px;
     margin-top: 40px;
+    padding-right: 30%;
 }
 #mostPopularStar {
-    padding-left: 38%;
+    padding-left: 40%;
 }
 .locationCardPopular {
     display: flex;
@@ -277,10 +283,13 @@ aside h2{
     margin-top: 10px;
     margin-bottom: 30px;
     border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
 }
 .locationCardPopular img{
     object-fit: fill;
-    height: 94%;
+    height: 91%;
     width: 40%;
     margin: 1.5%;
     border-radius: 12px 0px 0px 12px;
@@ -299,4 +308,114 @@ aside h2{
 }
 .mostPopularInfo .ratingsPopular{
     font-size: 12px;
+}
+
+/* ---------------------------------Activities in Marseille-------------------------------- */
+
+#activities {
+    margin-left: 70px;
+    margin-top: 70px;
+    height: 600px;
+    width: auto;
+}
+#activities h2{
+    width: 85%;
+}
+.activitiesContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    height: 550px;
+    width: 95%;
+    text-decoration: none;
+}
+#activitiesCard1 {
+    background-color: white;
+    height: 90%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1% 1% 1% 0;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg1 {
+    object-fit: cover;
+    height: 85%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+.activitiesTitle {
+    margin: 20px;
+    color: black;
+    text-decoration: none;
+}
+#activitiesCard2 {
+    background-color: white;
+    height: 50%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg2 {
+    object-fit: cover;
+    height: 75%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+#activitiesCard3 {
+    background-color: white;
+    height: 33%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg3 {
+    object-fit: cover;
+    height: 65%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+#activitiesCard4 {
+    background-color: white;
+    height: 90%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg4 {
+    object-fit: cover;
+    height: 85%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+#activitiesCard5 {
+    background-color: white;
+    height: 40%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg5 {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
+}
+#activitiesCard6 {
+    background-color: white;
+    height: 43.5%;
+    width: 22%;
+    border-radius: 18px;
+    margin: 1%;
+    box-shadow: 0px 0px 10px 2px rgba(226,226,226,1);
+}
+#activitiesImg6 {
+    object-fit: cover;
+    height: 70%;
+    width: 100%;
+    border-radius: 18px 18px 0px 0px;
 }
