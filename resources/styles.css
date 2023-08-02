@@ -1,6 +1,8 @@
 body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+    width: 100%;
+    position: relative;
 }
 
 /* ---------------------------------Header-------------------------------- */
@@ -40,6 +42,36 @@ nav {
 }
 .headerLink:hover {
     color: #0065FC;
+}
+
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    #headerLogo {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        margin-left: 70px;
+    }
+    #logoImage {
+        height: 80px;
+        width: auto;
+        margin: 20px auto;
+    }
+    nav {
+        height: 75px;
+        width:100%;
+        justify-content: space-around;
+    }
+    .headerLink {
+        font-size: 20px;
+        width: 50%;
+        text-align: center;
+    }
 }
 
 /* ---------------------------------Search-------------------------------- */
@@ -95,6 +127,27 @@ nav {
     border-radius: 0px 10px 10px 0px;
     border: 1px solid #0065FC;
     font-size: 18px;
+}
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    #search {
+        height: auto;
+        width: auto;
+        margin-left: 7%;
+    }
+    #search h2 {
+        font-weight: 700;
+        line-height: 25px;
+    }
+    #searchForm {
+        width: 100%;
+    }
+    #locationDot {
+        border-radius: 18px 0px 0px 18px;
+    }
+    #searchBox input{
+        width: 200px;
+    }
 }
 
 /* ---------------------------------Filters-------------------------------- */
@@ -176,6 +229,23 @@ nav {
     text-align: center;
     line-height: 50px;
 }
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    #filters {
+        flex-wrap: wrap;
+        margin-left: 7%;
+    }
+    #filters h3{
+        width: 100%;
+    }
+    .filterType {
+
+        margin: 10px 5px;
+    }
+    .filterType button{
+        font-size: 15px;
+    }
+}
 
 /* ---------------------------------Results-------------------------------- */
 
@@ -199,6 +269,15 @@ nav {
     margin-left: 10px;
     width: 27%;
     font-weight: 500;
+}
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    #results{
+        margin-left: 7%;
+    }
+    #results p{
+        width: 85%;
+    }
 }
 
 /* ---------------------------------Main-------------------------------- */
@@ -312,7 +391,38 @@ aside h2{
 .mostPopularInfo .ratingsPopular{
     font-size: 12px;
 }
-
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column-reverse;
+    }
+    aside{
+        height: 670px;
+        width: 100%;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    #accomodations {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+        background-color: white;
+        border-radius: 0;
+    }
+    #accomodations h2 {
+        width: 100%;
+        margin-left: 7%;
+        margin-top: 40px;
+    }
+    .locationCardMain {
+        background-color: white;
+        height: 215px;
+        width: 85%;
+        margin-left: 7%;
+        margin-bottom: 0px;
+    }
+}
 /* ---------------------------------Activities in Marseille-------------------------------- */
 
 #activities {
@@ -427,7 +537,82 @@ aside h2{
     width: 100%;
     border-radius: 18px 18px 0px 0px;
 }
-
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    #activities {
+        margin-left: 0;
+        margin-top: 20px;
+        height: auto;
+        width: 100%;
+    }
+    #activities h2{
+        margin-left: 7%;
+        width: 100%;
+    }
+    .activitiesContainer {
+        flex-wrap: nowrap;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    #activitiesCard1 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg1 {
+        height: 70%;
+    }
+    .activitiesTitle {
+        margin: 15px;
+    }
+    #activitiesCard2 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg2 {
+        height: 70%;
+    }
+    #activitiesCard3 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg3 {
+        height: 70%;
+    }
+    #activitiesCard4 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg4 {
+        height: 70%;
+    }
+    #activitiesCard5 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg5 {
+        height: 70%;
+    }
+    #activitiesCard6 {
+        height: 215px;
+        width: 85%;
+        border-radius: 18px;
+        margin-top: 20px;
+    }
+    #activitiesImg6 {
+        height: 70%;
+    }
+}
 /* ---------------------------------Footer-------------------------------- */
 
 footer {
@@ -455,4 +640,27 @@ footer {
     line-height: 30px;
     font-weight: 500;
     text-decoration: none;
+}
+/* ---------------Mobile------------- */
+@media screen and (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        height: 530px;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 7%;
+        margin-top: 20px;
+    }
+    .footer a {
+        color: black;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
+        text-decoration: none;
+    }
 }
