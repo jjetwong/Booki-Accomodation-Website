@@ -41,7 +41,12 @@
             placeholder="Enter a location"
           />
         </label>
-        <input class="search-button" type="submit" value="Search" />
+        <button class="search-button" type="submit">
+          <span class="search-button-desktop">Search</span>
+          <span class="search-button-mobile"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </button>
       </form>
     </section>
 
@@ -152,11 +157,12 @@
           </div>
         </a>
 
-        <a href=""><h3>Show More</h3></a>
+        <a class="show-more" href=""><h3>Show More</h3></a>
       </section>
 
       <section class="most-popular" id="mostPopular">
-        <h2>Most Popular <i class="fa-solid fa-star most-popular-star"></i></h2>
+        <h2 class="most-popular-title">Most Popular</h2>
+        <h2 class="most-popular-star"><i class="fa-solid fa-star"></i></h2>
 
         <a class="location-card-popular" href="">
           <img src="./src/Images/popular1.jpg" alt="" />
