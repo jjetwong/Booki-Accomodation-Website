@@ -23,7 +23,7 @@ header {
   margin-left: 70px;
   align-items: center;
 }
-.logo-image {
+.header-logo img {
   height: 50px;
   width: auto;
 }
@@ -39,6 +39,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 50%;
   border-top: 5px solid white;
   transition-duration: 0.3s;
 }
@@ -68,7 +69,7 @@ nav {
     align-items: center;
     margin-left: 70px;
   }
-  .logo-image {
+  .header-logo img {
     height: 80px;
     width: auto;
     margin: 20px auto;
@@ -104,7 +105,7 @@ nav {
   margin-left: 70px;
   line-height: 12px;
 }
-.search-title {
+.search h2 {
   font-weight: 700;
 }
 .search-form {
@@ -156,7 +157,7 @@ nav {
     width: auto;
     margin-left: 60px;
   }
-  .search-title {
+  .search h2{
     font-weight: 700;
     line-height: 25px;
   }
@@ -196,7 +197,7 @@ nav {
   align-items: center;
   margin-left: 70px;
 }
-.filters-title {
+.filters h3 {
   margin-right: 35px;
 }
 .filter-type {
@@ -206,7 +207,7 @@ nav {
   width: auto;
   margin: 10px 20px;
 }
-.filter-type-button {
+.filter-type button {
   height: 50px;
   width: auto;
   padding: 10px 25px 10px 60px;
@@ -218,10 +219,10 @@ nav {
   border: 3px solid #f2f2f2;
   transition-duration: 0.3s;
 }
-.filter-type-button:hover {
+.filter-type button:hover {
   background-color: #f2f2f2;
 }
-.filter-type-button:active {
+.filter-type button:active {
   background-color: #f2f2f2;
 }
 .filter-logo {
@@ -248,7 +249,7 @@ nav {
   border: 3px solid #f2f2f2;
   border-radius: 50%;
 }
-.results-p {
+.results p {
   margin-left: 10px;
   width: 27%;
   font-weight: 500;
@@ -259,16 +260,16 @@ nav {
     flex-wrap: wrap;
     margin-left: 60px;
   }
-  .filters-title {
+  .filters h3 {
     width: 100%;
   }
   .filter-type {
     margin: 10px 5px;
   }
-  .filter-type-button {
+  .filter-type button {
     font-size: 15px;
   }
-  .results-p {
+  .results p {
     width: 85%;
   }
 }
@@ -296,7 +297,7 @@ main {
   background-color: #f2f2f2;
   border-radius: 18px;
 }
-.accomodations-title {
+.accomodations h2 {
   width: 100%;
   margin-left: 35px;
   margin-top: 40px;
@@ -312,18 +313,18 @@ main {
   color: black;
   text-decoration: none;
 }
-.accomodations-card-img {
+.accomodations-card img {
   object-fit: cover;
   height: 120px;
   width: 96%;
   margin: 2%;
   border-radius: 12px 12px 0px 0px;
 }
-.accomodations-card-title {
+.accomodations-card h3 {
   font-size: 17px;
   margin: 0px 10px;
 }
-.accomodations-card-p {
+.accomodations-card p {
   line-height: 18px;
   font-size: 16px;
   margin: 8px 10px;
@@ -377,7 +378,7 @@ main {
   color: black;
   box-shadow: 0px 0px 10px 2px rgb(240, 240, 240);
 }
-.most-popular-card-img {
+.most-popular-card img {
   object-fit: cover;
   height: 93%;
   width: 40%;
@@ -416,7 +417,7 @@ main {
     background-color: white;
     border-radius: 0;
   }
-  .accomodations-title {
+  .accomodations h2 {
     width: 100%;
     margin-left: 30px;
     margin-top: 20px;
@@ -469,7 +470,7 @@ main {
     width: 100%;
     margin-left: 0px;
   }
-  .accomodations-title {
+  .accomodations h2 {
     width: 100%;
     margin-top: 40px;
   }
@@ -491,7 +492,7 @@ main {
     margin-left: 25px;
   }
 }
-/* ------------------------------------------------Activities in Marseille----------------------------------------------- */
+/* ----------------------------------------------Activities in Marseille -------------------------------------------- */
 
 .activities {
   margin-left: 70px;
@@ -499,7 +500,7 @@ main {
   height: 600px;
   width: 99%;
 }
-.activities-title {
+.activities h2 {
   width: 85%;
 }
 .activities-container {
@@ -560,7 +561,7 @@ background-color: white;
   width: 100%;
   border-radius: 18px 18px 0px 0px;
 }
-.activities-title {
+.activities-card h3 {
   margin: 20px;
   color: black;
   text-decoration: none;
@@ -573,7 +574,7 @@ background-color: white;
     height: auto;
     width: 100%;
   }
-  .activities-title {
+  .activities h2 {
     margin-left: 60px;
     width: 100%;
   }
@@ -594,13 +595,13 @@ background-color: white;
   .activities-card:nth-child(n) .activities-img {
     height: 70%;
   }
-  .activities-title {
+  .activities-card h3 {
     margin: 15px;
   }
 }
 /* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
-  .activities-title {
+  .activities h2 {
     margin-left: 30px;
   }
   .activities-card:nth-child(n) {
@@ -626,7 +627,7 @@ footer {
   margin-left: 70px;
   margin-top: 40px;
 }
-.footer-link {
+.footer-section a {
   color: black;
   font-size: 16px;
   line-height: 30px;
