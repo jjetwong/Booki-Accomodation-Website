@@ -418,7 +418,7 @@ main {
   }
   .accomodations-title {
     width: 100%;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-top: 20px;
   }
   .accomodations-card {
@@ -436,6 +436,7 @@ main {
     border-radius: 18px;
   }
   .most-popular-title {
+    margin-left: 20px;
     margin-top: 20px;
   }
   .most-popular-star {
@@ -470,16 +471,24 @@ main {
   }
   .accomodations-title {
     width: 100%;
-    margin-left: 30px;
     margin-top: 40px;
   }
   .accomodations-card {
+    margin-bottom: 10px;
     width: 85%;
   }
   .most-popular {
+    height: 570px;
     width: 100%;
     margin-left: 0;
     border-radius: 0;
+  }
+  .most-popular-card {
+    margin: 10px auto;
+    width: 85%;
+  }
+  .most-popular-title {
+    margin-left: 25px;
   }
 }
 /* ------------------------------------------------Activities in Marseille----------------------------------------------- */
@@ -488,7 +497,7 @@ main {
   margin-left: 70px;
   margin-top: 70px;
   height: 600px;
-  width: auto;
+  width: 99%;
 }
 .activities-title {
   width: 85%;
