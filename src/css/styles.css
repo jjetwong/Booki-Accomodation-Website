@@ -5,7 +5,7 @@ body {
   position: relative;
 }
 
-/* ---------------------------------Header-------------------------------- */
+/* ------------------------------------------------Header----------------------------------------------- */
 
 header {
   display: flex;
@@ -34,7 +34,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
-.header-link {
+.header-nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,21 +42,20 @@ nav {
   border-top: 5px solid white;
   transition-duration: 0.3s;
 }
-.header-link-a {
-    display: block;
+.header-nav-link-a {
+  display: block;
   font-size: 18px;
   color: black;
   text-decoration: none;
   transition-duration: 0.3s;
 }
-.header-link:hover {
+.header-nav-link:hover {
   border-top: 5px solid #0065fc;
 }
-.header-link:hover > .header-link-a {
-    color: #0065fc;
+.header-nav-link:hover > .header-nav-link-a {
+  color: #0065fc;
 }
-
-/* ---------------Tablet------------- */
+/* ------------------------------Tablet + Mobile---------------------------- */
 @media screen and (max-width: 992px) {
   header {
     flex-wrap: wrap;
@@ -79,44 +78,25 @@ nav {
     width: 100%;
     justify-content: space-around;
   }
-  .headerLink {
-    font-size: 20px;
+  .header-nav-link {
+    height: 40px;
+    font-size: 25px;
     width: 50%;
     text-align: center;
+    border-bottom: 5px solid #f2f2f2;
+  }
+  .header-nav-link-a {
+    font-weight: 500;
+  }
+  .header-nav-link:active {
+    border-bottom: 5px solid #0065fc;
+  }
+  .header-nav-link:active > .header-nav-link-a {
+    color: #0065fc;
   }
 }
 
-/* ---------------Mobile------------- */
-@media screen and (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    height: auto;
-  }
-  .header-logo {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    margin-left: 70px;
-  }
-  .logo-image {
-    height: 80px;
-    width: auto;
-    margin: 20px auto;
-  }
-  nav {
-    height: 75px;
-    width: 100%;
-    justify-content: space-around;
-  }
-  .headerLink {
-    font-size: 20px;
-    width: 50%;
-    text-align: center;
-  }
-}
-
-/* ---------------------------------Search-------------------------------- */
+/* ------------------------------------------------Search----------------------------------------------- */
 
 .search {
   height: 150px;
@@ -124,7 +104,7 @@ nav {
   margin-left: 70px;
   line-height: 12px;
 }
-.search h2 {
+.search-title {
   font-weight: 700;
 }
 .search-form {
@@ -142,7 +122,7 @@ nav {
   border-radius: 10px 0px 0px 10px;
 }
 .search-box input {
-  height: 45px;
+  height: 44px;
   width: 250px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -166,18 +146,17 @@ nav {
   border: 1px solid #0065fc;
   font-size: 18px;
 }
-
 .search-button-mobile {
   display: none;
 }
-/* ---------------Tablet------------- */
+/* ------------------------------Tablet---------------------------- */
 @media screen and (max-width: 992px) {
   .search {
     height: auto;
     width: auto;
     margin-left: 60px;
   }
-  .search h2 {
+  .search-title {
     font-weight: 700;
     line-height: 25px;
   }
@@ -191,26 +170,10 @@ nav {
     width: 200px;
   }
 }
-
-/* ---------------Mobile------------- */
+/* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
   .search {
-    height: auto;
-    width: auto;
     margin-left: 30px;
-  }
-  .search h2 {
-    font-weight: 700;
-    line-height: 25px;
-  }
-  .search-form {
-    width: 100%;
-  }
-  .location-dot {
-    border-radius: 18px 0px 0px 18px;
-  }
-  .search-box input {
-    width: 200px;
   }
   .search-button {
     width: 50px;
@@ -223,7 +186,7 @@ nav {
   }
 }
 
-/* ---------------------------------Filters-------------------------------- */
+/* ------------------------------------------------Filters----------------------------------------------- */
 
 .filters {
   display: flex;
@@ -233,7 +196,7 @@ nav {
   align-items: center;
   margin-left: 70px;
 }
-.filters h3 {
+.filters-title {
   margin-right: 35px;
 }
 .filter-type {
@@ -243,7 +206,7 @@ nav {
   width: auto;
   margin: 10px 20px;
 }
-.filter-type button {
+.filter-type-button {
   height: 50px;
   width: auto;
   padding: 10px 25px 10px 60px;
@@ -255,10 +218,10 @@ nav {
   border: 3px solid #f2f2f2;
   transition-duration: 0.3s;
 }
-.filter-type button:hover {
+.filter-type-button:hover {
   background-color: #f2f2f2;
 }
-.filter-type button:after {
+.filter-type-button:active {
   background-color: #f2f2f2;
 }
 .filter-logo {
@@ -271,49 +234,10 @@ nav {
   text-align: center;
   line-height: 50px;
 }
-
-/* ---------------Tablet------------- */
-@media screen and (max-width: 992px) {
-  .filters {
-    flex-wrap: wrap;
-    margin-left: 60px;
-  }
-  .filters h3 {
-    width: 100%;
-  }
-  .filter-type {
-    margin: 10px 5px;
-  }
-  .filter-type button {
-    font-size: 15px;
-  }
-}
-
-/* ---------------Mobile------------- */
-@media screen and (max-width: 768px) {
-  .filters {
-    flex-wrap: wrap;
-    margin-left: 30px;
-  }
-  .filters h3 {
-    width: 100%;
-  }
-  .filter-type {
-    margin: 10px 5px;
-  }
-  .filter-type button {
-    font-size: 15px;
-  }
-}
-
-/* ---------------------------------Results-------------------------------- */
-
 .results {
   display: flex;
   align-items: baseline;
-  margin-left: 70px;
-  width: auto;
-  margin-top: 20px;
+  width: 100%;
 }
 .info-logo {
   height: 25px;
@@ -324,37 +248,43 @@ nav {
   border: 3px solid #f2f2f2;
   border-radius: 50%;
 }
-.results p {
+.results-p {
   margin-left: 10px;
   width: 27%;
   font-weight: 500;
 }
-
-/* ---------------Tablet------------- */
+/* ------------------------------Tablet---------------------------- */
 @media screen and (max-width: 992px) {
-  .results {
+  .filters {
+    flex-wrap: wrap;
     margin-left: 60px;
   }
-  .results p {
+  .filters-title {
+    width: 100%;
+  }
+  .filter-type {
+    margin: 10px 5px;
+  }
+  .filter-type-button {
+    font-size: 15px;
+  }
+  .results-p {
     width: 85%;
   }
 }
-
-/* ---------------Mobile------------- */
+/* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
-  .results {
+  .filters {
     margin-left: 30px;
   }
-  .results p {
-    width: 85%;
-  }
 }
 
-/* ---------------------------------Main-------------------------------- */
+/* ------------------------------------------------Main Accomodations----------------------------------------------- */
 
 main {
   display: flex;
   flex-wrap: nowrap;
+  margin-top: 20px;
 }
 .accomodations {
   display: flex;
@@ -366,12 +296,12 @@ main {
   background-color: #f2f2f2;
   border-radius: 18px;
 }
-.accomodations h2 {
+.accomodations-title {
   width: 100%;
   margin-left: 35px;
   margin-top: 40px;
 }
-.location-card-main {
+.accomodations-card {
   background-color: white;
   height: 240px;
   width: 29%;
@@ -382,40 +312,36 @@ main {
   color: black;
   text-decoration: none;
 }
-.location-card-img {
+.accomodations-card-img {
   object-fit: cover;
   height: 120px;
   width: 96%;
-  margin: 5px;
+  margin: 2%;
   border-radius: 12px 12px 0px 0px;
 }
-.location-card-main h3 {
+.accomodations-card-title {
   font-size: 17px;
   margin: 0px 10px;
 }
-.location-card-main p {
+.accomodations-card-p {
   line-height: 18px;
   font-size: 16px;
   margin: 8px 10px;
 }
-.ratings {
+.accomodations-ratings {
   font-size: 12px;
   margin: 5px 10px;
 }
-.full-star {
-  color: #0065fc;
-}
-.no-star {
-  color: #f2f2f2;
-}
-.show-more {
+.accomodations-show-more {
   margin-left: 35px;
   margin-bottom: 35px;
   color: black;
   text-decoration: none;
   width: 100%;
 }
-/* ---------------------------------Most Popular-------------------------------- */
+
+/* ------------------------------------------------Most Popular----------------------------------------------- */
+
 .most-popular {
   display: flex;
   flex-direction: row;
@@ -438,7 +364,7 @@ main {
   margin-left: 35px;
   margin-top: 40px;
 }
-.location-card-popular {
+.most-popular-card {
   display: flex;
   background-color: white;
   height: 24%;
@@ -451,99 +377,112 @@ main {
   color: black;
   box-shadow: 0px 0px 10px 2px rgb(240, 240, 240);
 }
-.location-card-popular img {
-  object-fit: fill;
+.most-popular-card-img {
+  object-fit: cover;
   height: 93%;
   width: 40%;
   margin: 5px;
   border-radius: 12px 0px 0px 12px;
 }
-.most-popular-info {
+.most-popular-card-info {
+  width: 50%;
   margin-left: 10px;
 }
-.most-popular-info h3 {
+.most-popular-card-info h3 {
   height: 30%;
   width: 90%;
   margin: 15px 0 0 0;
 }
-.most-popular-info p {
+.most-popular-card-info p {
   height: 25%;
   margin: 15px 0 0 0;
 }
-.most-popular-info .ratingsPopular {
+.popular-ratings {
+  line-height: 40px;
   font-size: 12px;
 }
-/* ---------------Tablet------------- */
+.full-star {
+  color: #0065fc;
+}
+.no-star {
+  color: #f2f2f2;
+}
+/* ------------------------------Tablet---------------------------- */
 @media screen and (max-width: 992px) {
   .accomodations {
     height: auto;
-    width: 60%;
+    width: 55%;
     margin-left: 30px;
     background-color: white;
     border-radius: 0;
   }
-  .accomodations h2 {
+  .accomodations-title {
     width: 100%;
     margin-left: 60px;
-    margin-top: 40px;
+    margin-top: 20px;
   }
-  .location-card-main {
+  .accomodations-card {
     background-color: white;
     height: 215px;
     width: 40%;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
   .most-popular {
-    height: 700px;
+    height: 570px;
     width: 40%;
     margin-left: 0;
     margin-right: 20px;
     border-radius: 18px;
   }
-  .location-card-popular {
-    height: 150px;
+  .most-popular-title {
+    margin-top: 20px;
   }
-  .most-popular-info h3 {
-    height: 30%;
+  .most-popular-star {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+  .most-popular-card {
+    height: 140px;
     width: 90%;
-    margin: 15px 0 0 0;
-    font-size: 18px;
+    margin: 0 auto 20px;
+  }
+  .most-popular-card-info {
+    margin-left: 5px;
+  }
+  .most-popular-card-info h3 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+  }
+  .most-popular-card-info .ratingsPopular {
+    font-size: 12px;
   }
 }
-/* ---------------Mobile------------- */
+/* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
   main {
     flex-direction: column-reverse;
   }
-  .most-popular {
-    height: 670px;
-    width: 100%;
-    margin-left: 0;
-    border-radius: 0;
-  }
   .accomodations {
     flex-direction: column;
-    height: auto;
     width: 100%;
     margin-left: 0px;
-    background-color: white;
-    border-radius: 0;
   }
-  .accomodations h2 {
+  .accomodations-title {
     width: 100%;
     margin-left: 30px;
     margin-top: 40px;
   }
-  .location-card-main {
-    background-color: white;
-    height: 215px;
+  .accomodations-card {
     width: 85%;
-    margin-left: 20px;
-    margin-bottom: 0px;
+  }
+  .most-popular {
+    width: 100%;
+    margin-left: 0;
+    border-radius: 0;
   }
 }
-/* ---------------------------------Activities in Marseille-------------------------------- */
+/* ------------------------------------------------Activities in Marseille----------------------------------------------- */
 
 .activities {
   margin-left: 70px;
@@ -551,7 +490,7 @@ main {
   height: 600px;
   width: auto;
 }
-.activities h2 {
+.activities-title {
   width: 85%;
 }
 .activities-container {
@@ -612,14 +551,12 @@ background-color: white;
   width: 100%;
   border-radius: 18px 18px 0px 0px;
 }
-
 .activities-title {
   margin: 20px;
   color: black;
   text-decoration: none;
 }
-
-/* ---------------Tablet------------- */
+/* ------------------------------Tablet---------------------------- */
 @media screen and (max-width: 992px) {
   .activities {
     margin-left: 0;
@@ -627,7 +564,7 @@ background-color: white;
     height: auto;
     width: 100%;
   }
-  .activities h2 {
+  .activities-title {
     margin-left: 60px;
     width: 100%;
   }
@@ -643,55 +580,33 @@ background-color: white;
     height: 215px;
     width: 45%;
     border-radius: 18px;
-    margin: 20px auto;
+    margin: 10px;
   }
   .activities-card:nth-child(n) .activities-img {
     height: 70%;
   }
   .activities-title {
     margin: 15px;
+  }
+}
+/* ------------------------------Mobile---------------------------- */
+@media screen and (max-width: 768px) {
+  .activities-title {
+    margin-left: 30px;
+  }
+  .activities-card:nth-child(n) {
+    width: 85%;
   }
 }
 
-/* ---------------Mobile------------- */
-@media screen and (max-width: 768px) {
-  .activities {
-    margin-left: 0;
-    margin-top: 20px;
-    height: auto;
-    width: 100%;
-  }
-  .activities h2 {
-    margin-left: 30px;
-    width: 100%;
-  }
-  .activities-container {
-    flex-wrap: wrap;
-    align-items: center;
-    height: auto;
-    width: 100%;
-  }
-  .activities-card:nth-child(n) {
-    height: 215px;
-    width: 85%;
-    border-radius: 18px;
-    margin-top: 20px;
-  }
-  .activities-card:nth-child(n) .activities-img {
-    height: 70%;
-  }
-  .activities-title {
-    margin: 15px;
-  }
-}
-/* ---------------------------------Footer-------------------------------- */
+/* ------------------------------------------------Footer----------------------------------------------- */
 
 footer {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: #f2f2f2;
-  margin: 0;
+  margin: 20px 0 0 0;
   height: 230px;
   width: 105%;
 }
@@ -702,14 +617,14 @@ footer {
   margin-left: 70px;
   margin-top: 40px;
 }
-.footer-section a {
+.footer-link {
   color: black;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-decoration: none;
 }
-/* ---------------Mobile------------- */
+/* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
@@ -718,17 +633,8 @@ footer {
     margin-top: 50px;
   }
   .footer-section {
-    display: flex;
-    flex-direction: column;
     width: 100%;
     margin-left: 30px;
     margin-top: 20px;
-  }
-  .footer-section a {
-    color: black;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    text-decoration: none;
   }
 }
