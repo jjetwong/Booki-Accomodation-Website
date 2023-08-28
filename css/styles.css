@@ -8,7 +8,7 @@ a {
   color: black;
   transition-duration: 0.4s;
 }
-a:hover{
+a:hover {
   color: #0065fc;
 }
 ul {
@@ -201,8 +201,15 @@ nav {
   .search {
     margin-left: 30px;
   }
+  .search-box input {
+    width: 85%;
+  }
   .search-button {
+    position:absolute;
+    right: 10%;
     width: 50px;
+    border-radius: 15px;
+
   }
   .search-button-desktop {
     display: none;
@@ -229,14 +236,14 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 0;
+  margin: 0;
 }
 .filter-type {
   display: flex;
   align-items: center;
   height: 50px;
   width: auto;
-  margin: 10px 20px;
+  margin: 10px 20px 10px 0px;
 }
 .filter-type button {
   height: 50px;
@@ -306,10 +313,25 @@ nav {
 /* ------------------------------Mobile---------------------------- */
 @media screen and (max-width: 768px) {
   .filters {
-    margin-left: 30px;
+    margin-left: 25px;
   }
   .filter-type button {
-    font-size: 16px;
+    font-size: 15px;
+  }
+  #filterTypeLowCost {
+    order: 1;
+  }
+  #filterTypeRomantic {
+    order: 2;
+  }
+  #filterTypeFamily {
+    order: 3;
+  }
+  #filterTypePet {
+    order: 4;
+  }
+  #filterTypePet button {
+    padding-right: 60px;
   }
 }
 
@@ -571,7 +593,7 @@ main {
   margin-left: 70px;
   margin-top: 70px;
   height: 600px;
-  width: 100%;
+  width: 96%;
 }
 .activities h2 { /* 0110*/
   width: 85%;
@@ -583,11 +605,11 @@ main {
   align-items: stretch;
   justify-content: space-between;
   height: 500px;
-  width: 96%;
+  width: 100%;
   list-style: none;
 }
 
-.activities-card:nth-child(3n+1) {
+.activities-card:nth-child(3n+1) { /* 1, 4, 7, 10, 13 */
 background-color: white;
   height: 100%;
   width: 22%;
@@ -604,7 +626,7 @@ background-color: white;
   border-radius: 18px 18px 0px 0px;
 }
 
-.activities-card:nth-child(6n+2), .activities-card:nth-child(6n){
+.activities-card:nth-child(6n+2) /* 2, 8, 14 */ , .activities-card:nth-child(6n){ /* 6, 12, 18 */
   background-color: white;
   height: 53%;
   width: 22%;
@@ -621,7 +643,7 @@ background-color: white;
   border-radius: 18px 18px 0px 0px;
 }
 
-.activities-card:nth-child(6n+3), .activities-card:nth-child(6n-1) {
+.activities-card:nth-child(6n+3) /* 3, 9, 15 */, .activities-card:nth-child(6n-1) /* 5, 11, 17 */ {
   background-color: white;
   height: 39%;
   width: 22%;
