@@ -8,7 +8,7 @@ a {
   color: black;
   transition-duration: 0.4s;
 }
-a:hover{
+a:hover {
   color: #0065fc;
 }
 ul {
@@ -571,7 +571,7 @@ main {
   margin-left: 70px;
   margin-top: 70px;
   height: 600px;
-  width: 100%;
+  width: 96%;
 }
 .activities h2 { /* 0110*/
   width: 85%;
@@ -583,11 +583,11 @@ main {
   align-items: stretch;
   justify-content: space-between;
   height: 500px;
-  width: 96%;
+  width: 100%;
   list-style: none;
 }
 
-.activities-card:nth-child(3n+1) {
+.activities-card:nth-child(3n+1) { /* 1, 4, 7, 10, 13*/
 background-color: white;
   height: 100%;
   width: 22%;
@@ -604,7 +604,7 @@ background-color: white;
   border-radius: 18px 18px 0px 0px;
 }
 
-.activities-card:nth-child(6n+2), .activities-card:nth-child(6n){
+.activities-card:nth-child(6n+2) /* 2, 8, 14 */ , .activities-card:nth-child(6n){ /* 6, 12, 18 */
   background-color: white;
   height: 53%;
   width: 22%;
@@ -621,7 +621,7 @@ background-color: white;
   border-radius: 18px 18px 0px 0px;
 }
 
-.activities-card:nth-child(6n+3), .activities-card:nth-child(6n-1) {
+.activities-card:nth-child(6n+3) /* 3, 9, 15 */, .activities-card:nth-child(6n-1) /* 5, 11, 17 */ {
   background-color: white;
   height: 39%;
   width: 22%;
