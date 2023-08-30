@@ -9,7 +9,6 @@ a {
   transition-duration: 0.4s;
 }
 a:hover {
-a:hover {
   color: #0065fc;
 }
 ul {
@@ -628,7 +627,6 @@ background-color: white;
 }
 
 .activities-card:nth-child(6n+2) /* 2, 8, 14 */ , .activities-card:nth-child(6n){ /* 6, 12, 18 */
-.activities-card:nth-child(6n+2) /* 2, 8, 14 */ , .activities-card:nth-child(6n){ /* 6, 12, 18 */
   background-color: white;
   height: 53%;
   width: 22%;
@@ -645,7 +643,6 @@ background-color: white;
   border-radius: 18px 18px 0px 0px;
 }
 
-.activities-card:nth-child(6n+3) /* 3, 9, 15 */, .activities-card:nth-child(6n-1) /* 5, 11, 17 */ {
 .activities-card:nth-child(6n+3) /* 3, 9, 15 */, .activities-card:nth-child(6n-1) /* 5, 11, 17 */ {
   background-color: white;
   height: 39%;
